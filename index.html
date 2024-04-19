@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>People List</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-gray-100 p-6">
+    <h1 class="text-3xl font-bold mb-6">People List</h1>
+    <form id="people-form" class="mb-8">
+      <div class="mb-4">
+        <label for="name" class="block text-gray-700">Name:</label>
+        <input
+          type="text"
+          id="name"
+          name="name"
+          required
+          class="border border-gray-300 rounded-md px-3 py-2 w-full focus:outline-none focus:border-blue-500"
+        />
+      </div>
+      <div class="mb-4">
+        <label for="age" class="block text-gray-700">Age:</label>
+        <input
+          type="number"
+          id="age"
+          name="age"
+          required
+          class="border border-gray-300 rounded-md px-3 py-2 w-full focus:outline-none focus:border-blue-500"
+        />
+      </div>
+      <div class="mb-4">
+        <label for="address" class="block text-gray-700">Address:</label>
+        <input
+          type="text"
+          id="address"
+          name="address"
+          required
+          class="border border-gray-300 rounded-md px-3 py-2 w-full focus:outline-none focus:border-blue-500"
+        />
+      </div>
+      <button
+        type="button"
+        onclick="addPerson()"
+        class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+      >
+        Add Person
+      </button>
+    </form>
+
+    <div class="mb-8">
+      <button
+        onclick="displayAllPeople()"
+        class="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded mr-2"
+      >
+        Display All People
+      </button>
+      <button
+        onclick="deletePerson()"
+        class="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded mr-2"
+      >
+        Delete Person
+      </button>
+      <button
+        onclick="displaySinglePerson()"
+        class="bg-yellow-500 hover:bg-yellow-700 text-white font-bold py-2 px-4 rounded"
+      >
+        Display Single Person
+      </button>
+    </div>
+
+    <ul id="people-list" class="list-disc pl-6"></ul>
+
+    <script src="./dist/main.js"></script>
+    <script></script>
+  </body>
+</html>

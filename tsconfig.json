@@ -1,0 +1,9 @@
+{
+  "compilerOptions": {
+    "target": "ES2017",
+    "outDir": "dist",
+    "noImplicitAny": true
+  },
+
+  "include": ["src"]
+}
